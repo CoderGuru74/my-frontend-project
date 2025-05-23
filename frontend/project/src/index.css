@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.screen-active {
+  box-shadow: 0 0 15px 5px rgba(245, 223, 77, 0.5);
+}
+
+.glow {
+  box-shadow: 0 0 20px 8px rgba(245, 223, 77, 0.5);
+}
+
+.particle {
+  animation: float 3s ease-in-out infinite;
+}
+
+.particle-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.particle-delay-2 {
+  animation-delay: 1s;
+}
+
+.particle-delay-3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 0.8;
+  }
+}
+
+.bg-gradient-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.delay-600 {
+  transition-delay: 600ms;
+}
